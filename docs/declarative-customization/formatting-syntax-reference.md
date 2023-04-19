@@ -14,7 +14,7 @@ Specifies the type of element to create. Valid elements include:
 - div
 - span
 - a
-- [img](#img-src-security)
+- [img](#security-for-img-src)
 - svg
 - path
 - button
@@ -34,13 +34,13 @@ If the thumbnail loads successfully, a small [brand type icon](https://developer
   "src": "@thumbnail.medium"
  }
 ```
-### img src security
+### security for img src
 
-Images from the following domains are allowed:
- - tenant domain, configured multi-geo domains and vanity domains (company.sharepoint.com)
+By default, only image links from the following domains are allowed:
+ - tenant domain, and if configured, multi-geo domains and vanity domains (company.sharepoint.com)
  - cdn.office.net, akamaihd.net, static2.sharepointonline.com CDNs
  
-most other external image sources are blocked by default in custom formatters. To include external images and allow specific domains or CDNs, the domain needs to be added to a site-level setting - [HTMLFieldSecurity](https://support.microsoft.com/office/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b)
+Most external image sources are blocked by default in custom formatters. To include external images and allow specific domains or CDNs, the domain needs to be added to a site-level setting - [HTMLFieldSecurity](https://support.microsoft.com/office/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b)
 
 ## txtContent
 
